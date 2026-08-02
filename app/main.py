@@ -19,3 +19,7 @@ class BookingScheme(BaseModel):
 @app.post("/bookings")
 def add_booking(booking: BookingScheme):
     pass
+
+
+if __name__ == '__main__':
+    uvicorn.run("main:app", reload=True)
